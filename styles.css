@@ -35,18 +35,22 @@ h2 {
 }
 
 h2::before {
-    content: "📝";
     margin-right: 10px;
     font-size: 1.2em;
 }
 
-.container h2:nth-of-type(2)::before {
+#info-projeto::before {
+    content: "📝";
+}
+
+#info-time::before {
     content: "👥";
 }
 
-.container h2:nth-of-type(3)::before {
+#info-framework::before {
     content: "🛠️";
 }
+
 
 .info-block p {
     margin: 10px 0;
