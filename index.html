@@ -1,58 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informações do Projeto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h2 id="info-projeto">Informações do Projeto</h2>
-        <div class="info-block">
-            <p><strong>Descrição do Projeto:</strong></p>
-            <p style="color: #555;">[Espaço para descrever o objetivo e detalhes do projeto]</p>
-            <p><strong>Objetivos:</strong></p>
-            <ul style="color: #555;">
-                <li>[Objetivo 1]</li>
-                <li>[Objetivo 2]</li>
-                <li>[Objetivo 3]</li>
-            </ul>
-        </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FONAR - apresentação</title>
+    <link rel="stylesheet" href="styles.css" />
 
-    <div class="container">
-        <h2 id="info-time">Informações do Time</h2>
-        <div class="info-block">
-            <p><strong>Papéis e Responsabilidades:</strong></p>
-            <div class="team-member">
-                <strong>Pedro César:</strong> Analista, Back-end
-            </div>
-            <div class="team-member">
-                <strong>Thallyson:</strong> Front-end, Testes
-            </div>
-            <div class="team-member">
-                <strong>Thiago Jacinto:</strong> Back-end, Front-end, Testes
-            </div>
-            <div class="team-member">
-                <strong>Vinícius Gabriel:</strong> Back-end, Front-end
-            </div>
-            <div class="team-member">
-                <strong>Vithor:</strong> Designer, Arquitetura e organização
-            </div>
-        </div>
-    </div>
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
 
-    <div class="container">
-        <h2 id="info-framework">Framework e Ferramentas</h2>
-        <div class="info-block">
-            <p><strong>Ferramentas e Tecnologias Utilizadas:</strong></p>
-            <ul style="color: #555;">
-                <li>Java SpringBoot - Utilizado para o desenvolvimento back-end do projeto</li>
-                <li>React - Utilizado para o desenvolvimento front-end do projeto</li>
-                <li>MySQL - Utilizado para o Banco de dados do projeto</li>
-            </ul>
-        </div>
-    </div>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/logo.svg" alt="logo" />
+        <h1>FONAR</h1>
+      </div>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#about-project">Sobre o Projeto</a>
+          </li>
+          <li class="menu__item"><a href="#our-team">Nossa Equipe</a></li>
+          <li class="menu__item">
+            <a href="#technologies">Tecnologias</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="about-project" class="main container">
+      <h1 class="main__title">FONAR - Formulario da Avalição de Risco</h1>
+      <p class="main__description">
+        Descrição do projeto... Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum.
+      </p>
+      <p class="main__description">
+        Descrição do projeto... Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum.
+      </p>
+
+      <h2 class="main__subtitle">Objetivos</h2>
+      <ul class="main__list">
+        <li class="main__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+        <li class="main__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+        <li class="main__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+        <li class="main__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+        <li class="main__item">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+      </ul>
+    </main>
+
+    <section id="our-team" class="team container">
+      <h2 class="team__title">Nossa Equipe</h2>
+
+      <ul class="team__list">
+        <li class="team__member">
+          <img
+            src="assets/user.jpg"
+            alt="Pedro César"
+            class="team__member-image"
+          />
+          <p class="team__member-role">Analista e Back-end</p>
+          <h3 class="team__member-name">Pedro César</h3>
+        </li>
+
+        <li class="team__member">
+          <img
+            src="assets/user.jpg"
+            alt="Thallysson"
+            class="team__member-image"
+          />
+          <p class="team__member-role">Front-end e Tester</p>
+          <h3 class="team__member-name">Thallysson Silva</h3>
+        </li>
+
+        <li class="team__member">
+          <img
+            src="assets/user.jpg"
+            alt="Thiago Jacinto"
+            class="team__member-image"
+          />
+          <p class="team__member-role">Back-end, Front-end e Tester</p>
+          <h3 class="team__member-name">Thiago Jacinto</h3>
+        </li>
+
+        <li class="team__member">
+          <img
+            src="assets/user.jpg"
+            alt="Vicicius Gabriel"
+            class="team__member-image"
+          />
+          <p class="team__member-role">Front-end e Back-end</p>
+          <h3 class="team__member-name">Vicicius Gabriel</h3>
+        </li>
+
+        <li class="team__member">
+          <img src="assets/user.jpg" alt="Vithor" class="team__member-image" />
+          <p class="team__member-role">Designer, Arquitetura e organização</p>
+          <h3 class="team__member-name">Vithor</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section id="technologies" class="container">
+      <h2 class="tech__title">Tecnologias Utilizadas</h2>
+
+      <ul class="tech__list">
+        <li class="tech__item">
+          <img
+            src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/django.svg"
+            alt="Django"
+            class="tech__item-image"
+          />
+
+          <p>Django</p>
+        </li>
+        <li class="tech__item">
+          <img
+            src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/react-light.svg"
+            alt="ReactJS"
+            class="tech__item-image"
+          />
+
+          <p>ReactJS</p>
+        </li>
+        <li class="tech__item">
+          <img
+            src="https://raw.githubusercontent.com/onemarc/tech-icons/292cfceecce6a863e9a10216c1c730d3a1a02ff5/icons/mysql-light.svg"
+            alt="MySQL"
+            class="tech__item-image"
+          />
+
+          <p>MySQL</p>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 STARS-UFRPE</p>
+    </footer>
+  </body>
 </html>
